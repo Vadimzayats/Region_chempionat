@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Регистрация в личном кабинете</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="validator.js"></script>
+</head>
+<body>
+<form name="contactForm" onsubmit="return validateForm()" action="confirmation.php" method="post" class="beba">
+	<img src="cars/logo.png" width="90px" align="right">
+    <h2>Регистрация</h2>
+    <div class="row">
+        <label>Имя</label>
+        <input type="text" name="name">
+        <div class="error" id="nameErr"></div>
+    </div>
+	<div class="row">
+        <label>Фамилия</label>
+        <input type="text" name="name2">
+        <div class="error" id="nameErr2"></div>
+    </div>
+	<div class="row">
+        <label>Отчество</label>
+        <input type="text" name="name3">
+        <div class="error" id="nameErr3"></div>
+    </div>
+    <div class="row">
+        <label>Паспортные данные</label>
+        <input type="text" name="pasp">
+        <div class="error" id="paspErr3"></div>
+    </div>
+    <div class="row">
+        <label>Номер телефона</label>
+        <input type="text" name="mobile" maxlength="10">
+        <div class="error" id="mobileErr"></div>
+    </div>
+    <div class="row">
+        <label>Дата рождения</label>
+         <input id="date" type="date"
+         value="дд-мм-гг">
+        <div class="data" id="dataErr"></div>
+    </div>
+    <div class="row">
+        <label>Пароль</label>
+        <input type="text" name="parol" maxlength="10">
+        <div class="error" id="parolErr"></div>
+    </div>
+    <div class="row">
+        <label>Подтверждение пороля</label>
+        <input type="text" name="parol" maxlength="10">
+        <div class="error" id="parolErr"></div>
+    </div>
+    <div class="row">
+        <button><a href="login.html">Зарегистрироваться</a></button>
+    </div>
+</form>
+</body>
+</html>

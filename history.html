@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Бронирование</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Gill Sans, sans-serif;
+            background-image: url("cars/background.png");
+            background-size: cover;
+        }
+
+        .container {
+            padding: 1%;
+        }
+
+        .logo {
+            width: 10%;
+            height: 15%;
+            float: left;
+            margin: 2%;
+        }
+
+        .name {
+            margin-top: -3%;
+            margin-bottom: -3%;
+            width: 76%;
+            height: 70%;
+            font-size: 4em;
+            float: left;
+        }
+
+        .slogan {
+            width: 76%;
+            height: 80%;
+            font-size: 32px;
+            float: left;
+        }
+
+        .nav {
+            width: 98%;
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            margin-top: 2%;
+            margin-bottom: 2%;
+            background-color: rgba(200,200,200,0.3);
+            font-size: 32px;
+            font-weight: 700;
+            border-radius: 15px;
+        }
+
+        .nav-option {
+            background-color: rgba(255,255,255,0.5);
+            width: 18%;
+            height: 100%;
+            padding: 20px;
+            text-align: center;
+            border-radius: 15px;
+            box-shadow: 5px 5px 5px black;
+        }
+
+            .nav-option:hover {
+                transition: all 0.3s;
+                background-color: rgba(255,255,255,0.9);
+            }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .news {
+            padding: 20px 0;
+            text-align: center;
+            background-color: rgba(200,200,200,0.3);
+            border-radius: 15px;
+        }
+
+        .news-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .news-item {
+            width: 400px;
+            margin: 10px;
+            padding: 10px;
+            background-color: rgba(200,200,200,0.4);
+            font-weight: 600;
+            border-radius: 15px;
+            box-shadow: 5px 5px 5px black;
+        }
+
+            .news-item:hover {
+                background-color: rgba(200,200,200,0.8);
+                text-decoration: underline;
+                transition: all 0.3s;
+                transform: rotate3d(1,1,0,20deg);
+            }
+
+        .img {
+            width: 100%;
+            height: 75%;
+            border-radius: 15px;
+        }
+
+        .img50 {
+            width: 50%;
+            height: 50%;
+            border-radius: 15px;
+        }
+
+        .weather {
+            padding: 20px 0;
+            text-align: center;
+            background-color: rgba(200,200,200,0.3);
+            margin-top: 2%;
+            margin-bottom: 2%;
+            border-radius: 15px;
+        }
+
+        .weather-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .weather-item {
+            width: 400px;
+            margin: 10px;
+            padding: 10px;
+            background-color: rgba(200,200,200,0.4);
+            border-radius: 15px;
+        }
+
+            .weather-item:hover {
+                background-color: rgba(200,200,200,0.8);
+                transition: all 0.3s;
+                transform: rotate3d(1,1,0,20deg);
+            }
+
+        .weather-more {
+            text-decoration: none;
+        }
+
+            .weather-more:hover {
+                text-decoration: underline;
+            }
+
+        .footer {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            background-color: rgba(200,200,200,0.3);
+            border-radius: 15px;
+        }
+
+        .footer-item {
+            width: 400px;
+            height: 90%;
+            margin: 1%;
+            background-color: rgba(200,200,200,0.6);
+            text-align: center;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img class="img" src="cars/logo.png" alt="logo">
+        </div>
+        <div class="name">
+             <h2>Бронирование</h2>
+        </div>          
+        <div class="nav">
+            <div class="nav-option"><a href="index.html">Главная</a></div>
+            <div class="nav-option"><a href="history.html">История бронирования</a></div>
+            <div class="nav-option"><a href="branches.html">Филиалы</a></div>
+            <div class="nav-option"><a href="login.html">Личный Кабинет</a></div>
+        </div>
+        <div class="news">
+            <h2>Машины</h2>
+            <div class="weather-grid">
+                <div class="weather-item">
+                    <img class="img50" src="cars/3.png" alt="Weather">
+                    <p>
+                        ○ Номер заказа - 1 <br>
+                        ○ Марка автомобиля - Мариус <br>
+                        ○ Дата начала аренды - 30.8.2023 <br>
+                        ○ Номер телефона - +7 (912) 333 28 28<br>
+                        ○ Паспортные данные - 4608 4921 <br>
+                        ○ Банковская карта - **** **** **** 1234 <br>
+                        ○ Дата рождения - 12.12.2000<br>
+
+                    </p>
+                </div>
+                <div class="weather-item">
+                    <img class="img50" src="cars/1.png" alt="Weather">
+                    <p>
+                        ○ Номер заказа - 2 <br>
+                        ○ Марка автомобиля - Мариус <br>
+                        ○ Дата начала аренды - 12.4.2023<br>
+                        ○ Номер телефона - +7 (901) 322 13 55<br>
+                        ○ Паспортные данные - 2355 5432 <br>
+                        ○ Банковская карта - **** **** **** 7823 <br>
+                        ○ Дата рождения - 12.12.2000<br>
+
+                    </p>
+                </div>
+                <div class="weather-item">
+                    <img class="img50" src="cars/2.png" alt="Weather">
+                    <p>
+                        ○ Номер заказа - 3 <br>
+                        ○ Марка автомобиля - Мариус <br>
+                        ○ Дата начала аренды - 16.5.2023 <br>
+                        ○ Номер телефона - +7 (995) 112 88 30<br>
+                        ○ Паспортные данные - 4776 4213 <br>
+                        ○ Банковская карта - **** **** **** 0823 <br>
+                        ○ Дата рождения - 12.12.2000<br>
+
+                    </p>
+                </div>
+
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-item"><h2>О Нас</h2><p><h3 class="weather-more">Конфидениальность</h3><p><h3 class="weather-more">Соглашение</h3><p><h3 class="weather-more">О Проекте</h3></div>
+            <div class="footer-item"><h2>Наши Соцсети</h2><p><h3 class="weather-more">Однокласники</h3><p><h3 class="weather-more">Телеграм</h3><p><h3 class="weather-more">ВКонтакте</h3></div>
+            <div class="footer-item"><h2>Контакты</h2><p><h3 class="weather-more">8-800-555-34-35</h3><p><h3 class="weather-more">saratov@mail.ru</h3><p><h3 class="weather-more">Саратов, ул. Ленина 11</h3></div>
+            <div class="footer-item"><h2>Реклама</h2><p><h3 class="weather-more">Разместить обьявление</h3><p><h3 class="weather-more">Публичная оферта</h3><p><h3 class="weather-more">Правила и Регламент</h3></div>
+        </div>
+    </div>
+</body>
+</html>

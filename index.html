@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сайт города Саратов</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Gill Sans, sans-serif;
+            background-image: url("cars/background.png");
+            background-size: cover;
+        }
+
+        .container {
+            padding: 1%;
+        }
+
+        .logo {
+            width: 20%;
+            height: 30%;
+            float: left;
+            margin: 2%;
+        }
+
+        .name {
+            margin-top: -3%;
+            margin-bottom: -3%;
+            width: 76%;
+            height: 70%;
+            font-size: 4em;
+            float: left;
+        }
+
+        .slogan {
+            width: 76%;
+            height: 80%;
+            font-size: 32px;
+            float: left;
+        }
+
+        .nav {
+            width: 98%;
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            margin-top: 2%;
+            margin-bottom: 2%;
+            background-color: rgba(200,200,200,0.3);
+            font-size: 32px;
+            font-weight: 700;
+            border-radius: 15px;
+        }
+
+        .nav-option {
+            background-color: rgba(255,255,255,0.5);
+            width: 18%;
+            height: 100%;
+            padding: 20px;
+            text-align: center;
+            border-radius: 15px;
+            box-shadow: 5px 5px 5px black;
+        }
+
+            .nav-option:hover {
+                transition: all 0.3s;
+                background-color: rgba(255,255,255,0.9);
+            }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .news {
+            padding: 20px 0;
+            text-align: center;
+            background-color: rgba(200,200,200,0.3);
+            border-radius: 15px;
+        }
+
+        .news-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .news-item {
+            width: 400px;
+            margin: 10px;
+            padding: 10px;
+            background-color: rgba(200,200,200,0.4);
+            font-weight: 600;
+            border-radius: 15px;
+            box-shadow: 5px 5px 5px black;
+        }
+
+            .news-item:hover {
+                background-color: rgba(200,200,200,0.8);
+                text-decoration: underline;
+                transition: all 0.3s;
+                transform: rotate3d(1,1,0,20deg);
+            }
+
+        .img {
+            width: 100%;
+            height: 75%;
+            border-radius: 15px;
+        }
+
+        .img50 {
+            width: 50%;
+            height: 50%;
+            border-radius: 15px;
+        }
+
+        .weather {
+            padding: 20px 0;
+            text-align: center;
+            background-color: rgba(200,200,200,0.3);
+            margin-top: 2%;
+            margin-bottom: 2%;
+            border-radius: 15px;
+        }
+
+        .weather-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .weather-item {
+            width: 400px;
+            margin: 10px;
+            padding: 10px;
+            background-color: rgba(200,200,200,0.4);
+            border-radius: 15px;
+        }
+
+            .weather-item:hover {
+                background-color: rgba(200,200,200,0.8);
+                transition: all 0.3s;
+                transform: rotate3d(1,1,0,20deg);
+            }
+
+        .weather-more {
+            text-decoration: none;
+        }
+
+            .weather-more:hover {
+                text-decoration: underline;
+            }
+
+        .footer {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            background-color: rgba(200,200,200,0.3);
+            border-radius: 15px;
+        }
+
+        .footer-item {
+            width: 400px;
+            height: 90%;
+            margin: 1%;
+            background-color: rgba(200,200,200,0.6);
+            text-align: center;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img class="img" src="cars/logo.png" alt="logo">
+        </div>
+        <div class="name">
+             <h1>Индекс Драйв</h1>
+        </div>
+            <div class="slogan">
+                <h2>На любой случай - любой автомобиль</h2>
+            </div>
+            
+        <div class="nav">
+            <div class="nav-option"><a href="index.html">Главная</a></div>
+            <div class="nav-option"><a href="booking.html">Бронирование</a></div>
+            <div class="nav-option"><a href="branches.html">Филиалы</a></div>
+            <div class="nav-option"><a href="register.html">Личный Кабинет</a></div>
+        </div>
+        <div class="news">
+            <h2>Новости</h2>
+            <div class="news-grid">
+                <div class="news-item">
+                    <img class="img" src="cars/8.png" alt="News 1">
+                    <p>Скидки до 50% для новых клиентов Индекс Драйв</p>
+                    <button>Читать полностью...</button>
+                </div>
+                <div class="news-item">
+                    <img class="img" src="cars/7.png" alt="News 2">
+                    <p>Очередное пополнение автопарка, добавлены модели класса Премиум</p>
+							<button>Читать полностью...</button>
+                </div>
+                <div class="news-item">
+                    <img class="img" src="cars/6.png" alt="News 3">
+                    <p>Изменения условий договора Политики Конфиденциальности может затронуть клиентов определенной группы</p>
+                    <button>Читать полностью...</button>
+                </div>
+                <div class="news-item">
+                    <img class="img" src="cars/5.png" alt="News 4">
+                    <p>Изменение цен на тарифы за 2023 год</p>
+                    <button>Читать полностью...</button>
+                </div>
+            </div>
+        </div>
+        <div class="weather">
+            <h1>Найдите автомобиль вашей мечты</h1>
+            <div class="weather-grid">
+                <div class="weather-item">
+                    <img class="img50" src="cars/1.png" alt="Weather">
+                    <form>
+                    		<label><p><h2>Выберите класс автомобиля</h2></p></label>
+                    		<input type="radio" id="eco" name="car">
+                    		<label for="eco">Автомобили эконом класса</label>
+                    		<p></p>
+                    		<input type="radio" id="prem" name="car">
+                    		<label for="prem"><strong>Автомобили премиум класса</strong></label>
+                    </form>
+                </div>
+                <div class="weather-item">
+                    <img class="img50" src="cars/2.png" alt="Weather">
+                    <form>
+                    		<label for="name"><p><h2>Выберите марку автомобиля</h2></p></label>
+                    		<input type="text" id="name" name="name" placeholder='Марка авто, например "Ford"'>
+                    </form>
+                </div>
+                <div class="weather-item">
+                    <img class="img50" src="cars/3.png" alt="Weather">
+                    <form>
+                    		<label for="name"><p><h2>Выберите модель авто</h2></p></label>
+                    		<input type="text" id="name" name="name" placeholder='Модель, например "Focus"'>
+                    </form>
+                </div>
+                <div class="weather-item">
+                    <img class="img50" src="cars/4.png" alt="Weather">
+                    <p><h2>Поиск подходящего авто</h2></p>
+                    <button>Найти!</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-item"><h2>О Нас</h2><p><h3 class="weather-more">Конфидениальность</h3><p><h3 class="weather-more">Соглашение</h3><p><h3 class="weather-more">О Проекте</h3></div>
+            <div class="footer-item"><h2>Наши Соцсети</h2><p><h3 class="weather-more">Однокласники</h3><p><h3 class="weather-more">Телеграм</h3><p><h3 class="weather-more">ВКонтакте</h3></div>
+            <div class="footer-item"><h2>Контакты</h2><p><h3 class="weather-more">8-800-111-11-11</h3><p><h3 class="weather-more">saratov@mail.ru</h3><p><h3 class="weather-more">Саратов, ул. Ленина 11</h3></div>
+            <div class="footer-item"><h2>Реклама</h2><p><h3 class="weather-more">Разместить обьявление</h3><p><h3 class="weather-more">Публичная оферта</h3><p><h3 class="weather-more">Правила и Регламент</h3></div>
+        </div>
+    </div>
+</body>
+</html>

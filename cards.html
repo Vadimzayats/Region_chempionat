@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сайт города Саратов</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Gill Sans, sans-serif;
+            background-image: url("cars/background.png");
+            background-size: cover;
+        }
+
+        .container {
+            padding: 1%;
+        }
+
+        .logo {
+            width: 10%;
+            height: 15%;
+            float: left;
+            margin: 2%;
+        }
+
+        .name {
+            margin-top: -3%;
+            margin-bottom: -3%;
+            width: 76%;
+            height: 70%;
+            font-size: 4em;
+            float: left;
+        }
+
+        .slogan {
+            width: 76%;
+            height: 80%;
+            font-size: 32px;
+            float: left;
+        }
+
+        .nav {
+            width: 98%;
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            margin-top: 2%;
+            margin-bottom: 2%;
+            background-color: rgba(200,200,200,0.3);
+            font-size: 32px;
+            font-weight: 700;
+            border-radius: 15px;
+        }
+
+        .nav-option {
+            background-color: rgba(255,255,255,0.5);
+            width: 18%;
+            height: 100%;
+            padding: 20px;
+            text-align: center;
+            border-radius: 15px;
+            box-shadow: 5px 5px 5px black;
+        }
+
+            .nav-option:hover {
+                transition: all 0.3s;
+                background-color: rgba(255,255,255,0.9);
+            }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .news {
+            padding: 20px 0;
+            text-align: center;
+            background-color: rgba(200,200,200,0.3);
+            border-radius: 15px;
+        }
+
+        .news-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .news-item {
+            width: 400px;
+            margin: 10px;
+            padding: 10px;
+            background-color: rgba(200,200,200,0.4);
+            font-weight: 600;
+            border-radius: 15px;
+            box-shadow: 5px 5px 5px black;
+        }
+
+            .news-item:hover {
+                background-color: rgba(200,200,200,0.8);
+                text-decoration: underline;
+                transition: all 0.3s;
+                transform: rotate3d(1,1,0,20deg);
+            }
+
+        .img {
+            width: 100%;
+            height: 75%;
+            border-radius: 15px;
+        }
+
+        .img50 {
+            width: 50%;
+            height: 50%;
+            border-radius: 15px;
+        }
+
+        .weather {
+            padding: 20px 0;
+            text-align: center;
+            background-color: rgba(200,200,200,0.3);
+            margin-top: 2%;
+            margin-bottom: 2%;
+            border-radius: 15px;
+        }
+
+        .weather-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .weather-item {
+            width: 400px;
+            margin: 10px;
+            padding: 10px;
+            background-color: rgba(200,200,200,0.4);
+            border-radius: 15px;
+        }
+
+            .weather-item:hover {
+                background-color: rgba(200,200,200,0.8);
+                transition: all 0.3s;
+                transform: rotate3d(1,1,0,20deg);
+            }
+
+        .weather-more {
+            text-decoration: none;
+        }
+
+            .weather-more:hover {
+                text-decoration: underline;
+            }
+
+        .footer {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            background-color: rgba(200,200,200,0.3);
+            border-radius: 15px;
+        }
+
+        .footer-item {
+            width: 400px;
+            height: 90%;
+            margin: 1%;
+            background-color: rgba(200,200,200,0.6);
+            text-align: center;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img class="img" src="cars/logo.png" alt="logo">
+        </div>
+        <div class="name">
+             <h2>Банковские карты</h2>
+        </div>
+            
+        <div class="nav">
+            <div class="nav-option"><a href="index.html">Главная</a></div>
+            <div class="nav-option"><a href="booking.html">Бронирование</a></div>
+            <div class="nav-option"><a href="branches.html">Филиалы</a></div>
+            <div class="nav-option"><a href="login.html">Личный Кабинет</a></div>
+        </div>
+        <div class="weather">
+            <h1>Ваши привязанные карты</h1>
+            <div class="weather-grid">
+                <div class="weather-item">
+                    <img class="img50" src="cars/1.png" alt="Weather">
+                    <p><h2>1111 **** **** 4387</h2></p>
+                    <p><h2>Visa - Активна</h2></p>
+						  <button>Удалить карту</button>
+                </div>
+                <div class="weather-item">
+                    <img class="img50" src="cars/2.png" alt="Weather">
+                    <p><h2>2222 **** **** 3957</h2></p>
+                    <p><h2>MasterCard - Активна</h2></p>
+						  <button>Удалить карту</button>
+                </div>
+                <div class="weather-item">
+                    <img class="img50" src="cars/3.png" alt="Weather">
+                    <p><h2>2222 **** **** 2946</h2></p>
+                    <p><h2>MasterCard - Истек срок действия</h2></p>
+						  <button>Удалить карту</button>
+                </div>
+                <div class="weather-item">
+                    <img class="img50" src="cars/4.png" alt="Weather">
+                    <p><h2>3333 **** **** 1937</h2></p>
+                    <p><h2>Mir - Активна</h2></p>
+						  <button>Удалить карту</button>
+					</div>
+            </div>
+        </div>
+                <div class="weather">
+            <h1>Добавить новую карту</h1>
+            <div class="weather-grid">
+                <div class="weather-item">
+                    <img class="img50" src="cars/1.png" alt="Weather">
+                    <form>
+                    		<label for="name"><p><h2>Номер карты</h2></p></label>
+                    		<input type="text" id="name" name="name" placeholder='1234 5678 9999 0000'>
+                    </form>
+                </div>
+                <div class="weather-item">
+                    <img class="img50" src="cars/2.png" alt="Weather">
+                    <form>
+                    		<label for="name"><p><h2>Имя Фамилия держателя</h2></p></label>
+                    		<input type="text" id="name" name="name" placeholder='Ivan Ivanov'>
+                    </form>
+                </div>
+                <div class="weather-item">
+                    <img class="img50" src="cars/3.png" alt="Weather">
+                    <form>
+                    		<label for="name"><p><h2>Дата окончания срока действия</h2></p></label>
+                    		<input type="text" id="name" name="name" placeholder='11/26'>
+                    </form>
+                </div>
+                                <div class="weather-item">
+                    <img class="img50" src="cars/9.png" alt="Weather">
+                    <form>
+                    		<label for="name"><p><h2>Код CVV/CVC</h2></p></label>
+                    		<input type="text" id="name" name="name" placeholder='123'>
+                    </form>
+                </div>
+                <div class="weather-item">
+                    <img class="img50" src="cars/4.png" alt="Weather">
+                    <p><h2>Добавить карту</h2></p>
+                    <button>Добавить!</button>
+                </div>
+            </div>
+        </div>
+      
+    </div>
+</body>
+</html>

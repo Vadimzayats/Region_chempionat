@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Страница в разработке!</title>
+   <style>
+       body {
+           margin: 0;
+           padding: 0;
+           font-family: Gill Sans, sans-serif;
+           background-image: url("backgruond.png");
+           background-size: cover;
+       }
+
+       .container {
+           padding: 1%;
+       }
+
+       .logo {
+           width: 20%;
+           height: 30%;
+           float: left;
+           margin: 2%;
+       }
+
+       .name {
+           margin-top: -3%;
+           margin-bottom: -3%;
+           width: 76%;
+           height: 70%;
+           font-size: 4em;
+           float: left;
+       }
+
+       .slogan {
+           width: 76%;
+           height: 80%;
+           font-size: 32px;
+           float: left;
+       }
+
+       .nav {
+           width: 98%;
+           display: flex;
+           justify-content: space-between;
+           padding: 20px;
+           margin-top: 2%;
+           margin-bottom: 2%;
+           background-color: rgba(200,200,200,0.3);
+           font-size: 32px;
+           font-weight: 700;
+           border-radius: 15px;
+       }
+
+       .nav-option {
+           background-color: rgba(255,255,255,0.5);
+           width: 18%;
+           height: 100%;
+           padding: 20px;
+           text-align: center;
+           border-radius: 15px;
+           box-shadow: 5px 5px 5px black;
+       }
+
+           .nav-option:hover {
+               transition: all 0.3s;
+               background-color: rgba(255,255,255,0.9);
+           }
+
+       a {
+           text-decoration: none;
+           color: black;
+       }
+
+       .news {
+           padding: 20px 0;
+           text-align: center;
+           background-color: rgba(200,200,200,0.3);
+           border-radius: 15px;
+       }
+
+       .news-grid {
+           display: flex;
+           flex-wrap: wrap;
+           justify-content: center;
+       }
+
+       .news-item {
+           width: 400px;
+           margin: 10px;
+           padding: 10px;
+           background-color: rgba(200,200,200,0.4);
+           font-weight: 600;
+           border-radius: 15px;
+           box-shadow: 5px 5px 5px black;
+       }
+
+           .news-item:hover {
+               width: 400px;
+               margin: 10px;
+               padding: 10px;
+               background-color: rgba(200,200,200,0.8);
+               font-weight: 700;
+               text-decoration: underline;
+               transition: all 0.3s;
+               transform: rotate3d(1,1,0,20deg);
+           }
+
+       .img {
+           width: 100%;
+           height: 75%;
+           border-radius: 15px;
+       }
+
+       .weather {
+           padding: 20px 0;
+           text-align: center;
+           background-color: rgba(200,200,200,0.3);
+           margin-top: 2%;
+           margin-bottom: 2%;
+           border-radius: 15px;
+       }
+
+       .weather-grid {
+           display: flex;
+           flex-wrap: wrap;
+           justify-content: center;
+       }
+
+       .weather-item {
+           width: 400px;
+           margin: 10px;
+           padding: 10px;
+           background-color: rgba(200,200,200,0.4);
+           border-radius: 15px;
+       }
+
+           .weather-item:hover {
+               background-color: rgba(200,200,200,0.8);
+               transition: all 0.3s;
+               transform: rotate3d(1,1,0,20deg);
+           }
+
+       .weather-more {
+           text-decoration: none;
+       }
+
+           .weather-more:hover {
+               text-decoration: underline;
+           }
+
+       .footer {
+           display: flex;
+           flex-wrap: wrap;
+           justify-content: center;
+           background-color: rgba(200,200,200,0.3);
+           border-radius: 15px;
+       }
+
+       .footer-item {
+           width: 400px;
+           height: 90%;
+           margin: 1%;
+           background-color: rgba(200,200,200,0.6);
+           text-align: center;
+           border-radius: 15px;
+       }
+   </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img class="img" src="logo.png" alt="logo">
+        </div>
+        <div class="name">
+             <h1>Страница в разработке!</h1>
+        </div>
+            <div class="slogan">
+                <h2>Страницы нет, но если хотите - могу создать!</h2>
+            </div>
+            
+        <div class="nav">
+            <div class="nav-option"><a href="index.html">Главная</a></div>
+            <div class="nav-option"><a href="pageholder.html">Места</a></div>
+            <div class="nav-option"><a href="pageholder.html">Память</a></div>
+            <div class="nav-option"><a href="pageholder.html">Люди</a></div>
+        </div>
+    </div>
+</body>
+</html>
